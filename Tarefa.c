@@ -4,19 +4,22 @@
 #include<stdbool.h>
 
 // Define a estrutura para cadastro de cliente
-struct cadastro_de_cliente {
+struct cadastro_de_cliente
+{
     char nome[40];
     char endereco[40];
     int telefone;
     int codigo;
 
 };
-void scanClean() {
+void scanClean() 
+{
     int c;
     while ((c = getchar()) != '\n' && c != EOF) { }
 }
 
-int main(void) {
+int main(void) 
+{
     int numero = 1;
 struct cadastro_de_cliente cadastrarCliente(){
      // Declara uma variável do tipo cadastro_de_cliente
